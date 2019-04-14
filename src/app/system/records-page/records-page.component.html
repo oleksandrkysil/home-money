@@ -1,0 +1,28 @@
+<div class="title-block">
+  <h3 class="title">
+    Records Page <span class="sparkline bar"></span>
+  </h3>
+</div>
+
+<section class="section text-center" *ngIf="!isLoaded">
+  Loading ...
+</section>
+
+<section class="section" *ngIf="isLoaded">
+  <div class="row">
+    <div class="col-md-6">
+      <bookkeeper-add-event [categories]="categories"></bookkeeper-add-event>
+    </div>
+    <div class="col-md-6">
+      <bookkeeper-add-category (onCategoryAdd)="newCategoryAdded($event)"></bookkeeper-add-category>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <bookkeeper-edit-category
+        [categories]="categories"
+        (onCategoryEdit)="categoryWasEdited($event)"
+      ></bookkeeper-edit-category>
+    </div>
+  </div>
+</section>
