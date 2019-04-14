@@ -1,0 +1,105 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "t@gmail.com",
+      "password": "12345678",
+      "name": "Admin"
+    },
+    {
+      "email": "test@gmail.com",
+      "password": "123456",
+      "name": "Test",
+      "id": 2
+    },
+    {
+      "email": "test123@gmail.com",
+      "password": "123456",
+      "name": "Vasya",
+      "id": 3
+    },
+    {
+      "email": "qwer@gmail.com",
+      "password": "123456",
+      "name": "Neil",
+      "id": 4
+    },
+    {
+      "email": "123@gmail.com",
+      "password": "123456",
+      "name": "123456",
+      "id": 5
+    }
+  ],
+  "bill": {
+    "value": 2633,
+    "currency": "EUR"
+  },
+  "categories": [
+    {
+      "name": "Home",
+      "capacity": 1000,
+      "id": 1
+    },
+    {
+      "name": "Food",
+      "capacity": 800,
+      "id": 2
+    },
+    {
+      "id": 3,
+      "name": "Car",
+      "capacity": 400
+    }
+  ],
+  "events": [
+    {
+      "id": 1,
+      "type": "income",
+      "amount": 1050,
+      "category": 2,
+      "date": "03.01.2019 19:49:02",
+      "description": "Gift from friends"
+    },
+    {
+      "id": 2,
+      "type": "outcome",
+      "amount": 300,
+      "category": 1,
+      "date": "04.01.2019 19:49:02",
+      "description": "Bought laptop"
+    },
+    {
+      "type": "income",
+      "amount": 870,
+      "category": 2,
+      "date": "14.12.2018 14:00:48",
+      "id": 3,
+      "description": "Won lottery"
+    },
+    {
+      "type": "outcome",
+      "amount": 400,
+      "category": 2,
+      "date": "15.12.2018 14:00:58",
+      "id": 4,
+      "description": "Supply for next week"
+    },
+    {
+      "type": "outcome",
+      "amount": 250,
+      "category": 3,
+      "date": "16.12.2018 14:01:58",
+      "id": 5,
+      "description": "Gas station"
+    },
+    {
+      "type": "income",
+      "amount": 300,
+      "category": 1,
+      "date": "17.12.2018 12:25:17",
+      "description": "Donations",
+      "id": 6
+    }
+  ]
+}
